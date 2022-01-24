@@ -1,0 +1,96 @@
+٢٠٢٢-٠١-٢٤ ١٥:٥٩:٢١ database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/My Work/pluralsight/Object Relational Mapping/src/main/resources/db-files/products-db.mv.db [2.1.210/7]" [50000-210]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3296)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4056)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:288)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:807)
+	at org.h2.server.web.WebApp.test(WebApp.java:972)
+	at org.h2.server.web.WebApp.process(WebApp.java:241)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebThread.process(WebThread.java:153)
+	at org.h2.server.web.WebThread.run(WebThread.java:102)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/My Work/pluralsight/Object Relational Mapping/src/main/resources/db-files/products-db.mv.db [2.1.210/7]" [50000-210]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/My Work/pluralsight/Object Relational Mapping/src/main/resources/db-files/products-db.mv.db [2.1.210/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 16 more
+٢٠٢٢-٠١-٢٤ ١٥:٥٩:٢٤ database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/My Work/pluralsight/Object Relational Mapping/src/main/resources/db-files/products-db.mv.db [2.1.210/7]" [50000-210]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3296)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4056)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:288)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:807)
+	at org.h2.server.web.WebApp.test(WebApp.java:972)
+	at org.h2.server.web.WebApp.process(WebApp.java:241)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebThread.process(WebThread.java:153)
+	at org.h2.server.web.WebThread.run(WebThread.java:102)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/My Work/pluralsight/Object Relational Mapping/src/main/resources/db-files/products-db.mv.db [2.1.210/7]" [50000-210]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/My Work/pluralsight/Object Relational Mapping/src/main/resources/db-files/products-db.mv.db [2.1.210/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 16 more
+٢٠٢٢-٠١-٢٤ ٢١:٣٢:٥٤ database: wrong user or password; user: ""
+org.h2.message.DbException: Wrong user name or password [28000-210]
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.message.DbException.get(DbException.java:192)
+	at org.h2.engine.Engine.openSession(Engine.java:154)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at com.mohamed.mapper.orm.H2EntityManager.buildConnection(H2EntityManager.java:12)
+	at com.mohamed.mapper.orm.AbstractEntityManager.prepareStatementWith(AbstractEntityManager.java:27)
+	at com.mohamed.mapper.orm.AbstractEntityManager.persist(AbstractEntityManager.java:21)
+	at com.mohamed.mapper.WritingObjects.main(WritingObjects.java:22)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-210]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:529)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 15 more
+٢٠٢٢-٠١-٢٤ ٢١:٣٣:٣٣ jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'Mobile' (PRODUCT: ""QUANTITY"" INTEGER)"; SQL statement:
+insert into Product (id, name, quantity) values (?, ?, ?) [22018-210]
+٢٠٢٢-٠١-٢٤ ٢١:٣٧:٠٣ jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'Mobile' (PRODUCT: ""QUANTITY"" INTEGER)"; SQL statement:
+insert into Product (id, name, quantity) values (?, ?, ?) [22018-210]
+٢٠٢٢-٠١-٢٤ ٢١:٣٩:٣٥ jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'Mobile' (PRODUCT: ""QUANTITY"" INTEGER)"; SQL statement:
+insert into Product (id, name, quantity) values (?, ?, ?) [22018-210]
