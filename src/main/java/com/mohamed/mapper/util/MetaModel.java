@@ -59,6 +59,11 @@ public class MetaModel {
                 " (" + buildColumnNames() + ") values (" + buildQuestionMarks() + ")";
     }
 
+    public String buildSelectRequest() {
+        return "select  " + buildColumnNames() + " from " + aClass.getSimpleName()+
+                " where " + primaryKeyField.getName() + " = ?";
+    }
+
     private String buildColumnNames() {
         List<String> columns = columnFieldList.stream().map(ColumnField::getName)
                 .collect(Collectors.toList());

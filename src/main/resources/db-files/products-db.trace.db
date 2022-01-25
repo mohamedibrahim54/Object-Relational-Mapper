@@ -94,3 +94,54 @@ insert into Product (id, name, quantity) values (?, ?, ?) [22018-210]
 ٢٠٢٢-٠١-٢٤ ٢١:٣٩:٣٥ jdbc[3]: exception
 org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'Mobile' (PRODUCT: ""QUANTITY"" INTEGER)"; SQL statement:
 insert into Product (id, name, quantity) values (?, ?, ?) [22018-210]
+٢٠٢٢-٠١-٢٥ ٢٠:٣١:٢٠ jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUCTWHERE" not found; SQL statement:
+select  (id, name, quantity) from Productwhere id = ? [42102-210]
+٢٠٢٢-٠١-٢٥ ٢٠:٣٢:٠٤ jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "id" not found [42122-210]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:521)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3518)
+	at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:337)
+	at com.mohamed.mapper.orm.AbstractEntityManager.buildInstanceFrom(AbstractEntityManager.java:102)
+	at com.mohamed.mapper.orm.AbstractEntityManager.find(AbstractEntityManager.java:90)
+	at com.mohamed.mapper.ReadingObjects.main(ReadingObjects.java:12)
+٢٠٢٢-٠١-٢٥ ٢٠:٣٣:٤٥ jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "id" not found [42122-210]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:521)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3518)
+	at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:337)
+	at com.mohamed.mapper.orm.AbstractEntityManager.buildInstanceFrom(AbstractEntityManager.java:102)
+	at com.mohamed.mapper.orm.AbstractEntityManager.find(AbstractEntityManager.java:90)
+	at com.mohamed.mapper.ReadingObjects.main(ReadingObjects.java:12)
+٢٠٢٢-٠١-٢٥ ٢٠:٣٧:٥٣ jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "id" not found [42122-210]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:521)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3518)
+	at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:337)
+	at com.mohamed.mapper.orm.AbstractEntityManager.buildInstanceFrom(AbstractEntityManager.java:102)
+	at com.mohamed.mapper.orm.AbstractEntityManager.find(AbstractEntityManager.java:90)
+	at com.mohamed.mapper.ReadingObjects.main(ReadingObjects.java:12)
+٢٠٢٢-٠١-٢٥ ٢٠:٤٠:٢٢ jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "id" not found [42122-210]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:521)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3518)
+	at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:337)
+	at com.mohamed.mapper.orm.AbstractEntityManager.buildInstanceFrom(AbstractEntityManager.java:102)
+	at com.mohamed.mapper.orm.AbstractEntityManager.find(AbstractEntityManager.java:90)
+	at com.mohamed.mapper.ReadingObjects.main(ReadingObjects.java:12)
+٢٠٢٢-٠١-٢٥ ٢٠:٤٢:١٨ jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "ROW to INTEGER" [22018-210]
+٢٠٢٢-٠١-٢٥ ٢٠:٤٣:٠٨ jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "ROW to INTEGER" [22018-210]
